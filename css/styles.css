@@ -694,11 +694,14 @@ input:checked + .review-form-checkbox-label > .review-form-custom-checkbox {
   background-color: #f4f4fd;
 }
 .our-team-list {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 72px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+  gap: 64px 24px; /* 64px вертикальний, 24px горизонтальний відступ */
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
 }
+
 .our-team-list-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
